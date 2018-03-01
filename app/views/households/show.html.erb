@@ -1,0 +1,8 @@
+<h1><%= @household.name %></h1>
+<hr />
+<p>What would you like to do?</p>
+<%= link_to 'View Items', household_items_path(@household) %>
+<br />
+<%= link_to 'Edit', edit_household_path(@household) %>
+<br />
+<%= link_to 'Delete', @household, method: :delete %>

@@ -1,0 +1,9 @@
+<h1>Household Department</h1>
+<%= link_to 'Create New', new_household_path %>
+<ul>
+<% @households.each do |household| %>
+  <li>
+    <%= link_to household.name, household %>
+  </li>
+<% end %>
+</ul>
